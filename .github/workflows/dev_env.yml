@@ -2,7 +2,7 @@ name: Repository CI
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   module-ci:
     uses: ./.github/workflows/module_ci.yml

@@ -1,5 +1,5 @@
 import 'package:repository/entity/entity.dart';
-import 'package:repository/repository/repository.dart';
+import 'package:repository/repository.dart';
 import 'package:repository/unit_of_work/unit_of_work.dart';
 
 class DefaultUnitOfWork<TEntity extends Entity, Key> implements UnitOfWork<TEntity> {
