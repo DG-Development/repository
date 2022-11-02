@@ -1,8 +1,5 @@
 name: Check and test the source code
 on:
-  pull_request:
-    branches:
-      - main
   workflow_call:
 
 jobs:
@@ -17,5 +14,3 @@ jobs:
         run: flutter pub get
       - name: Check code
         run: flutter analyze
-      - name: Run test
-        run: flutter test test/carte_crm_app_test.dart --coverage
