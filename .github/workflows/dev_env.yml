@@ -1,0 +1,14 @@
+name: Dev env CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  module-ci:
+    uses: ./.github/workflows/module_ci.yml
+  ios-workflow:
+    uses: ./.github/workflows/ios_workflow.yml
+  apk-workflow:
+    uses: ./.github/workflows/apk_workflow.yml
+  web-workflow:
+    uses: ./.github/workflows/web_workflow.yml
