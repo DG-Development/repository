@@ -1,7 +1,7 @@
 abstract class DataContext<Key> {
 
   void dispose();
-  Future<void> connection({required String appId, required String apiUrl, required String clientKey, required String liveQueryUrl});
+  Future<void> connection({required String apiUrl});
 
   Future<Map<String, dynamic>> readByKey({required String tableName, required Key key});
   Future<List<dynamic>> readAll({required String tableName});
